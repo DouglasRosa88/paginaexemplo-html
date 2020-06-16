@@ -1,0 +1,355 @@
+/*======= RESET ========*/
+
+*{
+	margin: 0; 
+	padding: 0; 
+	font-size; 100%; 
+	border: none; 
+	outline: none; 
+	font-weight: 300; 
+	box-sizing: border-box; 
+    font-family: 'Lato', sans serife;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*======== CONTAINER =========*/
+
+.container {
+	width: 100%; 
+	float: left; 
+	padding: 3% 4%; 
+	text-align: center;
+}
+
+/*======== BG COLORS =========*/
+
+.bg-gradient {
+	background: linear-gradient(to right, #00FF00, #3FADCC);
+}
+
+.bg-cima {
+	background-color: white;
+}
+
+.bg-baixo {
+	background-color: green;
+}
+
+.bg-final a:hover {
+	color: red;
+}
+
+/*======== HELPERS =========*/
+
+.radius {
+	border-radius: 7px;
+}
+
+/*======== CABEÇALHO =========*/
+
+.logo {
+	width: 56px; 
+	height: 70px; 
+	float: left; 
+	font-size: 3.0em; 
+	font-family: Helvetica;
+}
+
+.logo h1 {
+	font-size: 56px; 
+	text-align: left; 
+	color: #013F01;
+}
+
+.button-menu {
+	width: 56px; 
+	height: 56px; 
+	float: right; 
+	text-align: center; 
+	color: green; 
+	border-radius: 56px; 
+    cursor: pointer;
+}
+
+/*======== MENU ==========*/
+
+.menu {
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	background-color: rgba(0,0,0,0.9); 
+	top: 0, 
+	left: 0;
+}
+ 
+.btn-close {
+	font-size: 2.5em; 
+	color: #fff; 
+	float: right; 
+	cursor: pointer; 
+	margin: 2% 11% 0 0;
+}
+
+.menu ul {
+	width:100%; 
+	float: left; 
+	text-align: center;
+}
+
+.menu li {
+	padding: 1.5%;
+}
+
+.menu li a {
+	font-size: 2em; 
+	color: #fff; 
+	padding: 1.5% 3%;
+}
+
+.menu li a:hover {
+	border: 1px 
+	solid #da6709;
+}
+
+/*======== BANNER ==========*/
+
+.banner {
+	background: url(../img/bg.png) no-repeat fixed;
+}
+
+.title {
+	width: 100%;
+}
+
+.title h2 {
+	font-size: 2.5em; 
+	color: white; 
+	font-weight: 700;
+}
+
+.title h3 {
+	font-size: 1.5em; 
+	color: white;
+}
+
+.buttons {
+	width: 100%; 
+	margin-top: 2%;
+}
+
+.buttons i {
+	float: right;
+}
+
+.btn {
+	width: 100%; 
+	font-size: 3em; 
+	text-align: left; 
+	cursor: pointer; 
+	padding: 5%; 
+	border-radius: 7px; 
+	background-color: #C4FFCA;
+}
+
+.btn-cadastrar {
+	color: green;
+}
+
+.btn-cadastrar a:hover {
+	color: green;
+}
+
+.btn-sobre a:hover {
+    color: green;
+}
+
+.btn-sobre {
+	color: green; 
+	margin-top: 2%;
+}
+
+ /*======= SERVIÇOS ========*/
+
+.servico {
+	width: 100%; 
+	text-align: left; 
+	margin-bottom: 3%;
+}
+
+.servico img {
+	border-radius: 7px 7px 0 0;
+}
+
+.inner {
+	padding: 7%;
+}
+
+.inner a {
+	font-size: 1.5em; 
+	color: #130400; 
+	font-weight: 700;
+}
+
+.inner h4 {
+	font-size: 1.2em; 
+	color: #130400; 
+	margin-top: 2%;
+}
+
+.inner p {
+	margin-top: 6%; 
+	color: #130400; 
+	line-height: 1.5em;
+}
+
+ /*======= NEWSLETTER ========*/
+
+ .newsletter h2 {
+ 	font-size: 1.5em; 
+ 	color: #fff; 
+ 	font-weight: 700;
+ }
+
+ .newsletter h3 {
+ 	color: #fff;
+ }
+
+ .newsletter form {
+ 	margin-top: 2%;
+ }
+
+ .newsletter input {
+ 	width: 100%; 
+ 	color: #fff; 
+ 	border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 5%;
+ }
+
+ .newsletter button {
+ 	font-size: 40px; 
+ 	width: 100%; 
+ 	border: 1px; 
+ 	color: black; 
+ 	padding: 5%; 
+ 	cursor: pointer;
+    margin-top: 2%;
+ }
+
+ .newsletter button a:hover {
+ 	border: none; color: green;
+ }
+
+/*======= RODAPÉ ========*/
+
+.social-icons a {
+	font-size: 1.5em; 
+	color: rgba(255, 255, 255, 0.7); 
+	margin-right: 3%;
+ }
+
+.social-icons a:last-child {
+	margin-right: 0;
+ }
+
+.social-icons a:hover {
+	color: rgb(255, 255, 255);
+ }
+
+.copyright {margin-top: 2%; color: rgba(255, 255, 255, 0.7);}
+
+/*======= MOBILE FIRST ========*/
+
+/* SMALL DEVICES / SMARTPHONES */
+
+@media screen and (min-width: 480px) {
+
+.logo {width: 214px; color: #0BC318; text-align: left;}
+
+.btn {font-size: 2em;}
+
+.newsletter button {
+	font-size: 2.0em;
+}
+
+
+/* SMALL DEVICES / TABLETS */
+
+@media screen and (min-width: 768px) {
+
+.servico {
+	width: 49%; 
+	float: left; 
+	margin-right: 2%;
+}
+
+.servico:nth-child(2){margin-right: 0;}
+
+.newsletter h2 {font-size: 2em;}
+
+.newsletter h3 {font-size: 1.5em;}
+
+.newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
+
+.newsletter button {font-size: 2.0em; width: 29%; padding: 2%; float: right; margin-top: 0;}
+
+}
+
+/* MEDIUM DEVICES / TABLETS & DESKTOPS */
+
+@media screen and (min-width: 960px) {
+
+.title {width: 70%; float: left; text-align: left;}
+
+.title h2 {font-size: 3em;}
+
+.title h3 {font-size: 2em;}
+
+.buttons {width: 30%; float: right; margin-top: 0;}
+
+.servico {width: 32%;}
+
+.servico:nth-child(2){margin-right: 2%;}
+
+.servico:nth-child(3){margin-right: 0;}
+
+.newsletter input {width: 60%; float: none;}
+
+.newsletter button {font-size: 2.0em; width: 29%; float: none;}
+
+}
+
+/* LARGE DEVICES / WIDE SCREENS */
+
+@media screen and (min-width: 1280px) {
+
+.button-menu {display: none;}
+
+.btn-close {display: none;}
+
+.menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; 
+display: block !important; position: static;}
+
+.menu li {padding: 0; float: left;}
+
+.menu li a {color: green; font-size: 1.5em; font-weight: bold; padding: 15px;}
+
+.menu li a:hover {border: none; color: #0CFF16;}
+ 
+.newsletter button {font-size: 2.0em; width: 29%; float: none;}
+}
